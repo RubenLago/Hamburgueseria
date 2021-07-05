@@ -41,3 +41,111 @@ body{
 }
 /* reglas generales ^ */
 
+/*  inicio header */
+header .nav-top{
+    background-color: var(--colorsecundario);
+    padding: 20px 10px;
+}
+header .nav-top a{
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+
+header .nav-top span{
+    display: none; /* solo en modo ordenador */
+    color: white;
+}
+header .nav-top a i{
+    font-size: 140%;
+}
+header .nav-top .container{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+header nav{
+    padding: 20px 10px;
+}
+header nav:after{
+    content: "";
+    height: 0;
+    display: block;
+    clear: both;
+}
+header nav .logo{
+    float: left;
+    max-width: 100px;
+}
+header nav .hamburguesa{
+    float: right;
+    width: 2em;
+}
+header nav .hamburguesa div{
+    border-top: 2px solid #aaa;
+    margin-bottom: 0.625em;
+}
+header nav .menu{
+    padding-top: 60px;
+    text-align: center;
+}
+header nav .menu a{
+    text-decoration: none;
+    display: block;
+    padding: 1.25em;
+    color: #aaa;
+    border-bottom: 1px solid #aaa;
+}
+header nav .menu li:last-child a{
+    border-bottom: 0;
+}
+header nav .menu a:hover, header nav .menu .activo{
+    color: var(--colorprincipal)
+}
+
+/* final header */
+
+
+
+
+
+
+
+
+/* mediaquerys */
+
+/* header top */
+@media(min-width:768px){
+    header .nav-top span{
+        display:inline;
+    }
+    header .nav-top a i{
+        font-size: 120%;
+    }
+    header .nav-top .container{
+        display: flex;
+        justify-content:space-between;
+    }   
+}
+
+/* header menu */
+@media(min-width:1004px){
+    header .hamburguesa{
+        display: none;
+    }
+    header nav .menu{
+        padding-top: 0px;
+        text-align: right;
+        float: right;
+    }
+    header nav .menu li{
+        /* display: inline;  no sirve porque dentro tenemos un elemento a que es en linea...los elementos en linea no pueden contener elementos en bloque */
+        display: inline-block;
+    }
+    header nav .menu a{
+        display: block;
+        padding: 0.7em 2em;
+        color: #aaa;
+        border-bottom: 0px solid #aaa;
+    }
+}
