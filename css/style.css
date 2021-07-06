@@ -278,7 +278,34 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img{
 
 /* final main */
 
+/* inicio footer */
+footer{
+    background-color: var(--colorsecundario);
+    color: white;
+    padding: var(--margingrip) 0;
+    text-align: center;
+    margin-top: calc(2*(var(--margingrip)));
+}
+footer a{
+    color: var(--colorprincipal);
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}
+/* final footer */
 
+/* fleca inicio */
+.arriba{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    font-size: 2em;
+}
+.arriba a{
+    color:var(--colorprincipal);
+}
+/* flecha final */
 
 
 /* mediaquerys */
@@ -319,7 +346,10 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img{
     }
     main section .flex article, main section .flex article:last-child{
         width: calc(33.333% - (2*var(--margingrip)));
-    }   
+    }  
+    footer{
+        text-align: left;
+    } 
 }
 
 /* header menu */
