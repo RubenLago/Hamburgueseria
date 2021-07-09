@@ -1,3 +1,103 @@
-main section .flex article{
-    border-bottom: none; 
+:root{
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentesecundaria: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --fontsize: 1em;
+    --margingrip: 1em;
+    --anchomaximo:1100px;
 }
+
+
+/* override styles style.css: main line and @media */
+main section .flex article{
+    border: none; 
+    padding: 20px;
+}
+
+
+/* new styles */
+main section .flex{
+    justify-content: center;
+}
+main section .flex cite{
+    color: var(--colorprincipal);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+main section .flex article a{
+    display: inline-block;
+    margin-top: 50px;
+}
+
+
+/* box date */
+main article .caja_fecha{
+    display: block;
+    position: absolute;
+    width: 25%;
+    height: 22%;
+    background-color: red;
+    opacity: 0.5; 
+}
+main article .caja_fecha p{
+    font-size: 3em;
+    color:white;
+    font-family: var(--fuenteprincipal);
+    opacity: 1; 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+@media(min-width:768px){
+
+    /* new @media  */
+    main section .flex {
+        border-bottom: none;   
+    }
+}
+
+
+    @media (min-width: 768px){
+     
+    }
+
+/* error no se ven los iconos del menú */
+  
+
+  /*   header .nav-top span{
+        display:inline;
+    }
+    header .container .flex{
+        display: flex;
+        justify-content:space-between;
+    }
+      */
+
+/* header menu */
+@media(min-width:1004px){
+   
+   main section #ourblogs{
+       justify-content: none;
+   }
+    main section .flex{
+        width: var(--anchomaximo);
+        justify-content: center; /* ERROR */
+        
+    }
+   
+    
+   /*  main section .flex article.articulos_blog{
+        width: calc(50% -(2*var(--margingrip)));;
+    } */
+   /*  main section .flex article, main section .flex article:last-child{
+        width: calc(50% - (2*var(--margingrip)));} */
+    
