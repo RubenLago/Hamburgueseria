@@ -240,7 +240,7 @@ main section article h3{
     transform: rotateY(180deg);
 }
 
-/* about us comienzo */
+/* about us start */
 main #aboutus .columna{
     width: 100%;
     padding: 0.5em;
@@ -273,12 +273,12 @@ main #aboutus figure:hover .marco, main #aboutus figure:hover .marco img{
 }
 
 
-/* about us final */
+/* about us end */
 
 
-/* final main */
+/* end main */
 
-/* inicio footer */
+/* start footer */
 footer{
     background-color: var(--colorsecundario);
     color: white;
@@ -293,9 +293,9 @@ footer a{
 footer a:hover{
     text-decoration: underline;
 }
-/* final footer */
+/* end footer */
 
-/* fleca inicio */
+/* arrow start */
 .arriba{
     position: fixed;
     bottom: 30px;
@@ -305,7 +305,7 @@ footer a:hover{
 .arriba a{
     color:var(--colorprincipal);
 }
-/* flecha final */
+/* arrow end */
 
 
 /* mediaquerys */
