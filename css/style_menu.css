@@ -17,16 +17,57 @@ main section .flex article{
 
 
 /* new styles */
-main section.menu{
+main section#menu{
     background-color: var(--colorsecundario);
+}
+main section#menu h2{
+    color: white;
+    font-family: var(--fuentesecundaria);
+}
+main section#menu .indice_menu ul li a{
+   color: white;
+   text-decoration: none;
+   font-family: var(--fuenteprincipal);
+   padding-left: 10px;
+   padding-bottom: 10px;
+}
+main section#menu .indice_menu ul li.activo{
+    background-color: var(--colorprincipal);
+    border-radius: 5px;
+}
+main section#menu .indice_menu ul li:hover{
+    background-color: var(--colorprincipal);
+    border-radius: 5px;   
+}
 
+
+main section#menu .indice_menu ul{
+    padding-bottom: 40px;
 }
-main section .flex cite{
-    color: var(--colorprincipal);
-    display: inline-block;
-    margin-bottom: 10px;
+main section#menu h3{
+    color: white;
+    margin-top: 20px;
 }
+main section#menu h3 span{
+    color:var(--colorprincipal);
+    padding-left: 20px;
+}
+main section#menu h3:first-child span{
+    color:white;
+border-bottom: 2px solid var(--colorprincipal);}
+
+main section#menu .flex p{
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
 main section .flex article a{
     display: inline-block;
     margin-top: 20px;
 }
+main .margen{
+    padding-left: 25px;
+}
+
