@@ -1,0 +1,32 @@
+:root{
+    --fuenteprincipal: 'Montserrat', sans-serif;
+    --fuentesecundaria: 'Handlee', cursive;
+    --colorprincipal: #fa573a;
+    --colorsecundario: #21242e;
+    --fontsize: 1em;
+    --margingrip: 1em;
+    --anchomaximo:1100px;
+}
+
+
+/* override styles style.css: main line and @media */
+main section .flex article{
+    border: none; 
+    padding: 20px;
+}
+
+
+/* new styles */
+main section.menu{
+    background-color: var(--colorsecundario);
+
+}
+main section .flex cite{
+    color: var(--colorprincipal);
+    display: inline-block;
+    margin-bottom: 10px;
+}
+main section .flex article a{
+    display: inline-block;
+    margin-top: 20px;
+}
