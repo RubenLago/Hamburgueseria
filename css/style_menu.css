@@ -31,15 +31,10 @@ main section#menu .indice_menu ul li a{
    padding-left: 10px;
    padding-bottom: 10px;
 }
-main section#menu .indice_menu ul li.activo{
+main section#menu .indice_menu ul li:hover {
     background-color: var(--colorprincipal);
     border-radius: 5px;
 }
-main section#menu .indice_menu ul li:hover{
-    background-color: var(--colorprincipal);
-    border-radius: 5px;   
-}
-
 
 main section#menu .indice_menu ul{
     padding-bottom: 40px;
@@ -48,18 +43,24 @@ main section#menu h3{
     color: white;
     margin-top: 20px;
 }
-main section#menu h3 span{
+
+main section#menu h3:first-child span{
+color:white;
+border-bottom: 2px solid var(--colorprincipal);}
+
+main section#menu div.margen article div.flotante h3 span{
     color:var(--colorprincipal);
     padding-left: 20px;
+    border-bottom: none;
 }
-main section#menu h3:first-child span{
-    color:white;
-border-bottom: 2px solid var(--colorprincipal);}
 
 main section#menu .flex p{
     color: white;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+main section .flex .margen article{
+    width: 100%;
 }
 
 
@@ -69,5 +70,98 @@ main section .flex article a{
 }
 main .margen{
     padding-left: 25px;
+}
+footer{
+    margin-top: 1px;
+    
+}
+.arriba{
+    bottom: 15px;
+}
+
+
+
+/* @media */
+@media(min-width:600px){
+    body main section .flex article{
+        border-left: none;
+        /* the body is needed to override the styles style.css */
+    }
+    main section .flex .margen article:last-child{
+        width: 100%;
+    }
+    main section .flex article{
+        width: 100%;
+        margin: var(--margingrip) 0 0 0;
+        border-bottom: 0px solid #aaa;
+        border-left: 1px solid #aaa;
+        padding-bottom: 0;
+        padding-left: calc(2*(var(--margingrip)));
+        justify-content: center;
+        
+    }
+    main section div.margen article div.flotante{
+       padding-left: 10px;
+  
+
+    } 
+    
+
+    @media(min-width:768px){
+        
+        header .nav-top a i{
+            font-size: 120%;
+        }
+       
+        main section .flex article, main section .flex article{
+            width: 100%;
+        } 
+        
+       
+    }
+
+    @media(min-width:1004px){
+     main section .flex .menu article, main section .flex .menu article:last-child{
+            width: calc(50% - (2*var(--margingrip)));
+        } 
+        main section div.margen article div{
+            width: calc(25% - (2*var(--margingrip))); 
+            float: left;  
+        }
+        main section div.margen article .flotante{
+            width: calc(66.666% - (2*var(--margingrip)));
+            padding-left: 20px;
+              
+        }
+        }
+        main section div.margen article:nth-child(2),main section div.margen article:nth-child(3){
+            clear: left;
+        }
+        #menu  .container .flex div:first-child{
+            width: calc(33.333% - (2*var(--margingrip)));
+            float: left; 
+
+        }
+        #menu  .container .flex div:first-child .indice_menu{
+            width: calc(100% - (2*var(--margingrip)))
+        }
+        div.container div.flex div.margen{
+            width: calc(66.666% - (2*var(--margingrip)));
+        
+        }
+
+        
+
+        
+
+    
+
+       
+
+    }
+    
+   
+    
+
 }
 
