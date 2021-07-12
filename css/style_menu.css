@@ -116,7 +116,7 @@ footer{
         main section .flex article, main section .flex article{
             width: 100%;
         } 
-        
+
        
     }
 
@@ -148,6 +148,9 @@ footer{
         div.container div.flex div.margen{
             width: calc(66.666% - (2*var(--margingrip)));
         
+        }
+        div.container div.flex div.margen img{
+        padding-top: 20px;
         }
 
         
